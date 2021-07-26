@@ -1,0 +1,150 @@
+.contact {
+    background: url('../../img/contact_fon.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 54px;
+    padding-bottom: 80px;
+    font-family: Roboto;
+}
+.contact .container h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact .container .contact-card {
+    width: 100%;height: auto;
+    display: flex;justify-content: space-between;
+}
+.contact .container .contact-card .contact-box{
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.16);
+    width: 45%;
+    padding: 5%;
+}
+.contact .container .contact-card .contact-box input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.33);
+    box-shadow: inset 1px 1px 12px rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
+}
+.contact .container .contact-card .contact-box h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.contact .container .contact-card .contact-box p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    padding: 23px 0 45px 0;
+}
+.contact .container .contact-card .contact-box .contact-box-item {
+    width: 100%;height: 40px;
+    display: flex;
+}
+
+.contact .container .contact-card .contact-box .contact-box-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.contact .container .contact-card .contact-box .contact-box-item p {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    padding-top: -0px;
+}
+.contact .container .contact-card .contact-box .contact-box-item:nth-child(5) {
+    margin-bottom: 40px;
+
+}
+.contact .container .contact-card .contact-box .contact-box-item:nth-child(5) p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+.contact .container .contact-card .contact-box .navbar-sms-btn {
+    display: flex;
+    margin-bottom: 30px;
+}
+.contact .container .contact-card .contact-box .navbar-sms-btn .sms-btn {
+    display: flex;justify-content: space-around;align-items: center;
+    background: #fff;
+    width: 150px;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 567px){
+    .contact .container h1{
+        font-size: 30px;
+    }
+    .contact .container .contact-card {
+        flex-direction: column;
+    }
+    .contact .container .contact-card .contact-box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contact .container .contact-card .contact-box h2 {
+        font-size: 24px;
+    }
+    .contact .container .contact-card .contact-box:nth-child(2) h2 {
+        margin-bottom: 30px;
+    }
+    .contact .container .contact-card .contact-box p {
+        font-size: 16px;
+    }
+    .contact .container .contact-card .contact-box .contact-box-item {
+        margin-bottom: 20px;
+    }
+
+    .contact .container .contact-card .contact-box .contact-box-item:nth-child(5) p {
+        font-size: 24px;
+    }
+    .contact .container .contact-card .contact-box .contact-box-item:nth-child(5) img {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 567px) and (max-width: 920px){
+
+    .contact .container .contact-card {
+        flex-direction: column;
+    }
+    .contact .container .contact-card .contact-box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contact .container .contact-card .contact-box h2 {
+        font-size: 36px;
+    }
+    .contact .container .contact-card .contact-box:nth-child(2) h2 {
+        margin-bottom: 30px;
+    }
+    .contact .container .contact-card .contact-box p {
+        font-size: 22px;
+    }
+    .contact .container .contact-card .contact-box .contact-box-item {
+        margin-bottom: 20px;
+    }
+
+    .contact .container .contact-card .contact-box .contact-box-item:nth-child(5) p {
+        font-size: 24px;
+    }
+    .contact .container .contact-card .contact-box .contact-box-item:nth-child(5) img {
+        margin-top: 10px;
+    }
+}

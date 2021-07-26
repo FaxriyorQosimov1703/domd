@@ -1,0 +1,172 @@
+.house {
+    width: 100%;height: auto;
+    font-family: Roboto;
+    font-style: normal;
+    padding-top: 90px;
+}
+.house h1:nth-child(1) {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #1E0801;
+}
+.house h1:nth-child(2) {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #1E0801;
+    padding-bottom: 45px;
+}
+
+.house .house-parent .house-card {
+    width: 100%;
+    height: auto;
+    display: flex;justify-content: space-between;flex-wrap: wrap;
+}
+.house .house-parent .house-card .house-box {
+    width: 32%;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.16);
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 20px;
+
+}
+
+.house .house-parent .house-card .house-box:hover {
+    background: #DDA046;
+    box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.16);
+    
+}
+.house .house-parent .house-card .house-box:hover .house-box-element .circle {
+    background: #fff;
+}
+.house .house-parent .house-card .house-box:hover .house-box-element .btn-white {
+    background: #fff;
+}
+.house .house-parent .house-card .house-box .house-box-element     {
+    padding: 10%;
+    margin-bottom: 15px;
+    position: relative;
+}
+.house .house-parent .house-card .house-box .house-box-element h3 {
+    padding-bottom: 56px;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 33px;
+}
+.house .house-parent .house-card .house-box .house-box-element .circle {
+    width: 28px;height: 28px;
+    border-radius: 50%;
+    background: #DDA046;
+    position: absolute;
+    top: 30px;right: 24px;
+}
+.house .house-parent .house-card .house-box img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.circleRight{
+    margin-left: 20%;
+}
+
+.house-btn {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 320px ) and (max-width: 567px){
+    .house h1:nth-child(1) {
+        font-size:30px;
+        line-height: 27px;
+    }
+    .house h1:nth-child(2) {
+        font-size: 30px;
+        line-height: 27px;
+
+    }
+    .house {
+        width: 100%;
+    }
+    .house .house-parent {
+        width: 100%;
+        height: 600px;
+    }
+    .house .house-parent .house-card {
+        height: 100%;width: 100%;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        /* max-width: 600%; */
+    }
+    .house .house-parent .house-card .house-box{
+        position: absolute;
+        top: 0;left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .house .house-parent .house-card .house-box img {
+        position: absolute;
+        bottom: 0;left: 0;
+    }
+    .house .house-parent .house-card  .house-box.activeSlide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .house .house-parent .house-card .house-box.lastSlide {
+        transform: translateX(-100%);
+    }
+    .house .house-parent .house-card .house-box.nextSlide {
+        transform: translateX(100%);
+    }
+    .house .house-parent .house-card .house-box .house-box-element h3{
+        font-size: 18px;
+    }
+    .house-btn {
+        margin-top: 30px;
+        display: block;
+        display: flex;justify-content: space-evenly;
+    }
+    .prev, .next {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+    .prev:hover, .next:hover {
+        background: #DDA046;
+        border-radius: 50%;
+    }
+}
+
+
+@media screen and (min-width: 567px) and (max-width: 920px){
+    .house h1:nth-child(1) {
+        font-size:30px;
+        line-height: 27px;
+    }
+    .house h1:nth-child(2) {
+        font-size: 30px;
+        line-height: 27px;
+
+    }
+    /* .house .house-card {
+        flex-direction: column;
+    } */
+    .house .house-parent .house-card .house-box{
+        width: 48%;
+    }
+    .house .house-parent .house-card .house-box .house-box-element h3{
+        font-size: 18px;
+        width: 80%;
+        padding-bottom: 0;
+        height: 100px;
+        padding-top: 20px;
+    }
+    .house .house-parent .house-card .house-box .house-box-element {
+        padding: 6%;
+    }
+}
